@@ -1,1 +1,36 @@
-<p>login works!</p>
+<div class="login-container">
+  <img class="film" src="assets/images/film.png" alt="logo-img-film" />
+  <div class="logo">Rotten Potatoes</div>
+  <div class="desc">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis quaerat
+    soluta illum harum magni necessitatibus similique perferendis mollitia odio
+    itaque, qui tenetur, iure obcaecati vero consectetur dignissimos voluptates
+    repellendus.
+  </div>
+
+  <div class="login-form">
+    <div class="form-group">
+      <label for="uname">Username</label>
+      <input
+        type="text"
+        name="uname"
+        class="form-control"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="form-group">
+      <label for="pword">Password</label>
+      <input
+        type="password"
+        name="pword"
+        class="form-control"
+        [(ngModel)]="password"
+      />
+    </div>
+
+    <div class="btn-container">
+        <button class="btn btn-dark" (click)="login()">Login</button>
+        <div class="error">{{ errorMsg }}</div>
+    </div>
+  </div>
+</div>
