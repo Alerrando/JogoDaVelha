@@ -11,7 +11,7 @@ export class LoginComponent {
   username = "";
   password = "";
   errorMsg = "";
-  private auth: AuthComponent = new AuthComponent;
+  private auth!: AuthComponent;
   constructor(private router: Router) {  }
   
   
