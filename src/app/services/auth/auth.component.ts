@@ -4,10 +4,10 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss']
+  styleUrls: ['./auth.component.scss'],
 })
 export class AuthComponent {
-  constructor (private router: Router) {  }
+  constructor(private router: Router) {}
 
   login(uname: string, pword: string) {
     if (uname == 'Alerrando' && pword == '1234') {
@@ -17,8 +17,7 @@ export class AuthComponent {
     return 403;
   }
 
-  
-  logout(){
-    this.router.navigate(['/login'])
+  logout() {
+    this.router.navigate(['/login']);
   }
 }

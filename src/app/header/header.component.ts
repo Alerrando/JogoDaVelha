@@ -5,18 +5,17 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  constructor(private router: Router) {}
+  private auth: AuthComponent = new AuthComponent(this.router);
 
-  private auth: AuthComponent | undefined;
-  constructor (private router: Router) {  }
-
-  goToHome(){
+  goToHome() {
     this.router.navigate(['/home']);
   }
 
-  logout(){
-    this.auth!.logout();
+  logout() {
+    this.auth.logout();
   }
 }
