@@ -36,6 +36,7 @@
       flex-direction: row;
       gap: 1rem;
       flex-wrap: wrap;
+      margin-bottom: 45px;
       overflow: hidden;
 
       .cover img{
@@ -51,6 +52,7 @@
           height: 50px;
           margin-top: 5px;
         }
+
       }
     }
   }
@@ -58,4 +60,9 @@
   .popular-movies {
     width: 25%;
   }
+}
+
+.rating{
+  padding-right: 45px;
+  position: relative;
 }
